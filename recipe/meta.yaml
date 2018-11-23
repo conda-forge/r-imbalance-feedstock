@@ -16,7 +16,7 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 1001
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
@@ -65,8 +65,7 @@ about:
     to treat data before applying a classifier algorithm. This package includes recent
     resampling algorithms in the literature.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
