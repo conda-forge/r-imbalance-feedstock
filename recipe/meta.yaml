@@ -1,4 +1,4 @@
-{% set version = '1.0.0' %}
+{% set version = "1.0.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/imbalance_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/imbalance/imbalance_{{ version }}.tar.gz
-  sha256: f94e6d824941b49b7f4c3a54a3d7a41b853e4c55a2a0aa3152a0128288e3d0dd
+  sha256: dd924879e7fdca11e71f6627204b548f3de1a77dc35c6a57ace1a5c551ed7fee
 
 build:
   merge_build_host: True  # [win]
-  number: 1002
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
